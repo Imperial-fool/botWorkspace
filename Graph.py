@@ -179,7 +179,7 @@ def get_apidata(pair:str ,backtrack = None):
      try:
         if backtrack == None and pair != '':
             parameters = {
-    'secret': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNqbW9ycmlzQGxha2VoZWFkdS5jYSIsImlhdCI6MTYyMTAyODIwNCwiZXhwIjo3OTI4MjI4MjA0fQ.2c8K_4Pg1n2xaeZ14AfcOiiUVSsqkIwi6AAwlA43q5s",
+    'secret': "",
     'exchange': 'binance',
     'symbol':pair ,
     'interval': '1m'
@@ -191,7 +191,7 @@ def get_apidata(pair:str ,backtrack = None):
         elif pair != '':
             
             parameters = {
-    'secret': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNqbW9ycmlzQGxha2VoZWFkdS5jYSIsImlhdCI6MTYyNjEyODkzMSwiZXhwIjo3OTMzMzI4OTMxfQ.ZRjn9WHm-bVsHhMkGp5nlV9yYoDfql6gS9wAf0-n0g8",
+    'secret': "",
     'exchange': 'binance',
     'symbol': pair,
     'interval': '1m',
