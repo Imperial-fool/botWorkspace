@@ -6,7 +6,7 @@ from email.header import decode_header
 import time
 
 port = 465
-password = "byqbaz-8zigbI-vutpun"
+password = ""
 cont = ssl.create_default_context()
 
 def checkin(profit:float, t:float, buys, sells,account_value):
