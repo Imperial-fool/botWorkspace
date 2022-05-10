@@ -16,8 +16,8 @@ from binance.enums import *
 from binance.exceptions import BinanceAPIException, BinanceOrderException
 
 indicator = "rsi","macd","avgprice","fibonacciretracement","dmi","bbands2","adx","mfi","vwap"
-api_key = "ATk7OZZQE8wL5MPHg93dlIMRrCRCtkk7cjJqoCfyFnyC7qaZEfQ5Q30FcQdx2E3v" #binance api
-api_secret = "lXmPJ46hPjL6B789bMtYspBF7uz6exqh87geI72bFBgJvnJop118ctV6G2gVJERc" #secret here
+api_key = "" #binance api
+api_secret = "" #secret here
 
 seconds = time.time()
 amountofpairs = 25
@@ -110,14 +110,14 @@ class Bot:
         for i,value in enumerate(indicator):
             self.endpoint[i] = f"https://api.taapi.io/{value}"
         self.parameters = {
-    'secret': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNqbW9ycmlzQGxha2VoZWFkdS5jYSIsImlhdCI6MTYyNjEyODkzMSwiZXhwIjo3OTMzMzI4OTMxfQ.ZRjn9WHm-bVsHhMkGp5nlV9yYoDfql6gS9wAf0-n0g8",
+    'secret': "",
     'exchange': 'binance',
     'symbol':self.pair ,
     'interval': '1m',
         }
     #fix this damn thing eventually...
         self.fib_pram = {
-    'secret': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNqbW9ycmlzQGxha2VoZWFkdS5jYSIsImlhdCI6MTYyNjEyODkzMSwiZXhwIjo3OTMzMzI4OTMxfQ.ZRjn9WHm-bVsHhMkGp5nlV9yYoDfql6gS9wAf0-n0g8",
+    'secret': "",
     'exchange': 'binance',
     'symbol':self.pair,
     'interval': '1m',
