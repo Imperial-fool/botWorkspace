@@ -16,7 +16,7 @@ def checkin(profit:float, t:float, buys, sells,account_value):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=cont) as server:
         server.login("botmanupdate@gmail.com", password)
         sender_email = "botmanupdate@gmail.com"
-        receiver_email = "6472299463@vmobile.ca"
+        receiver_email = ""
         message = """\
         Subject: Bot Update
 
@@ -35,7 +35,7 @@ def error_report(line,line2=""):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=cont) as server:
         server.login("botmanupdate@gmail.com", password)
         sender_email = "botmanupdate@gmail.com"
-        receiver_email = "nerdx01@gmail.com"
+        receiver_email = ""
         message = """\
         Subject: Bot Error
 
@@ -53,7 +53,7 @@ def custom_message(line):
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=cont) as server:
         server.login("botmanupdate@gmail.com", password)
         sender_email = "botmanupdate@gmail.com"
-        receiver_email = "6472299463@vmobile.ca"
+        receiver_email = ""
         message = """\
         Subject: Message
 
@@ -104,7 +104,7 @@ def emailcontroller(checkin,shutdown,restart, buy_sell_arr,print_items):
                         if isinstance(From, bytes):
                             From = From.decode(encoding)
                             # if the email message is multipart
-                        if From == "6472299463@vmobile.ca":
+                        if From == "":
                              
                              if msg.is_multipart():
                 # iterate over email parts
